@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav {
+    background-color: #2563eb;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+section, aside {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+article {
+    background-color: #eff6ff;
+    padding: 15px;
+    margin: 12px 0;
+    border-left: 5px solid #2563eb;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: #dbeafe;
+    border-left: 5px solid #2563eb;
+}
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #172554;
+    font-weight: bold;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #2563eb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px 5px 0 0;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #172554;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section, aside {
+        padding: 15px;
+    }
+}
